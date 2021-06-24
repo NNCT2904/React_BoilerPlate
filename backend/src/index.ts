@@ -1,8 +1,9 @@
-import server from './app/Server';
-import express from 'express';
-
-const app = express();
+import server from "./server/Server";
 
 const PORT = 8080;
 
-server(app, PORT);
+const app = server.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
+});
+
+export default app;
