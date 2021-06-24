@@ -1,9 +1,7 @@
-import { promises } from "dns";
-
 const loadInsult = async (): Promise<string | undefined> => {
   try {
-    const respone = await fetch("http://localhost:8080/api");
-    const body = await respone.text();
+    const response = await fetch("http://localhost:8080/api/insult");
+    const body = await response.text();
     return body;
   } catch (error) {
     console.error(error);

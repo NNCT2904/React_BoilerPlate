@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import insultReducer from "../features/shakespeareInsult/shakespeareSlice";
+import insultReducer from "../component/shakespeareInsult/shakespeareSlice";
 
 export const store = configureStore({
     reducer: {
