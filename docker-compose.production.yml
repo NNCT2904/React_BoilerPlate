@@ -1,0 +1,6 @@
+services:
+    app:
+        build:
+            target: production
+        image: boilerplate:production
+        container_name: boilerplate_production

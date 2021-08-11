@@ -1,7 +1,9 @@
-version: "3.8"
-
 services:
     app:
+        build:
+            target: dev
+        image: boilerplate:development
+        container_name: boilerplate_development
         restart: unless-stopped
         volumes:
             - ./backend:/src
