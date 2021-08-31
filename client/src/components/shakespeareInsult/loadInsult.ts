@@ -5,7 +5,7 @@ const loadInsult = async (): Promise<string | undefined> => {
     const body = await response.text();
     return body;
   } catch (error) {
-    console.error(error);
+    return 'Cannot fetch';
   }
 };
 

@@ -20,7 +20,6 @@ export const fetchInsult = createAsyncThunk('insult/fetch', async () => {
     }
     return respond;
   } catch (error: any) {
-    console.error(error);
     throw new Error(error);
   }
 });

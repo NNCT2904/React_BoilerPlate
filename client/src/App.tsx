@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './component/home';
-import About from './component/About';
+import AboutSection from './components/Contents/AboutSection';
+import IndexPage from './pages';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" exact component={About} />
+      <Route path="/" exact component={IndexPage} />
+      <Route path="/about" exact component={AboutSection} />
     </Router>
   );
 }
